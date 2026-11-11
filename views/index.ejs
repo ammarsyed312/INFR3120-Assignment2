@@ -2,8 +2,44 @@
 <%- include partials/main_nav.ejs %>
 
 <main class="container">
-    <h1><%= title %></h1>
-    <p>My name is Ammar. Welcome to my personal portfolio website.</p>
+    <div class="intro">
+        <div class="profile-column">
+            <img
+                src="/images/profile.jpeg"
+                alt="Portrait of Ammar Syed"
+                class="profile-photo"
+            >
+        </div>
+
+        <div class="intro-details">
+            <h1>Ammar Syed</h1>
+            <p>Networking and IT Security Student</p>
+            <p>Ontario Tech University</p>
+            <p>
+                Interested in cybersecurity, networking,
+                and developing my technical skills.
+            </p>
+        </div>
+    </div>
+
+    <div class="content-box">
+        <h2>Welcome to My Portfolio</h2>
+
+        <p>
+            I am studying Networking and IT Security at
+            Ontario Tech University. I am interested in cybersecurity,
+            technology, and developing my technical skills.
+        </p>
+
+        <p>
+            Explore my portfolio to learn about me,
+            see my projects, and find my professional profiles.
+        </p>
+
+        <a class="btn btn-primary" href="/projects">
+            <i class="fa-brands fa-elementor"></i> View My Projects
+        </a>
+    </div>
 </main>
 
 <%- include partials/footer.ejs %>

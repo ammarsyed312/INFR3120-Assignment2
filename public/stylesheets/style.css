@@ -1,8 +1,165 @@
+/* Page appearance */
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: "Times New Roman", Times, serif;
+    color: #eee6d8;
+    background-color: #101827;
 }
 
+/* Shared navigation */
+.navbar {
+    background-color: #080f1c;
+    padding: 20px;
+    border: 1px solid #b99a5b;
+}
+
+.navbar .navbar-brand {
+    color: #dfc58d;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.navbar .navbar-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.navbar .nav-link {
+    color: #eee6d8;
+}
+
+.navbar .nav-link:hover {
+    color: #dfc58d;
+}
+
+/* Main content */
+main {
+    padding: 40px 20px;
+}
+
+h1 {
+    color: #dfc58d;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #dfc58d;
+}
+
+h3 {
+    color: #eee6d8;
+}
+
+/* Introduction: Flexbox follows the Week 4 example.
+   The gradient follows the Week 1 example. */
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    background: linear-gradient(to bottom, #243550 0%, #101827 100%);
+    color: #eee6d8;
+    border: 1px solid #b99a5b;
+    border-radius: 8px;
+    padding: 40px 20px;
+    margin-bottom: 30px;
+}
+
+/* Photo on the left */
+.profile-column {
+    width: 200px;
+}
+
+.profile-photo {
+    width: 180px;
+    height: auto;
+    border: 3px solid #dfc58d;
+    border-radius: 8px;
+}
+
+/* Introduction text on the right */
+.intro-details {
+    flex: 1;
+    min-width: 200px;
+}
+
+/* Shared content panels */
+.content-box {
+    background-color: #19263a;
+    border: 1px solid #73603d;
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 25px;
+}
+
+/* Project layout */
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-box {
+    background-color: #19263a;
+    border: 1px solid #73603d;
+    border-radius: 8px;
+    padding: 30px;
+    flex: 1;
+    min-width: 200px;
+}
+
+/* Links */
 a {
-  color: #00B7FF;
+    color: #dfc58d;
+}
+
+a:hover {
+    color: #fff1ce;
+}
+
+/* Bootstrap button appearance */
+.btn-primary {
+    background-color: #dfc58d;
+    border: 1px solid #dfc58d;
+    color: #101827;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.btn-primary:hover {
+    background-color: #fff1ce;
+    border: 1px solid #fff1ce;
+    color: #101827;
+}
+
+/* Shared footer */
+footer {
+    background-color: #080f1c;
+    color: #eee6d8;
+    border: 1px solid #b99a5b;
+    padding: 25px;
+    text-align: center;
+}
+
+footer a {
+    color: #dfc58d;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: #fff1ce;
+}
+
+/* Mobile layout follows the Week 4 media-query example. */
+@media (max-width: 600px) {
+    .intro {
+        flex-direction: column;
+    }
+
+    #projects {
+        flex-direction: column;
+    }
+
+    .navbar .navbar-nav {
+        gap: 12px;
+    }
 }
